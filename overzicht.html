@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overzicht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overzicht-page">
+    <header>
+        <nav> 
+            <img src="images/mochi.gif" alt="mochi smiles"
+            style="width: 50px;height: 50px;">  
+            <a href="home.html" >Home</a>     
+            <a href="overzicht.html" >Overzicht</a>
+            <a href="over-ons.html">Over ons</a>
+        </nav>  
+    </header>
+    <main>
+        <hr/>
+        <h1>Overzicht</h1>
+        <p id="demo"></p>
+        <script class="aftel-timer">
+            var countDownDate = new Date("Oct, 5, 2024, 12:00:05").getTime();
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML ="Volgende aflevering in " + days + " d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+        </script>
+        <ul>
+            <li><strong>aflevering 6 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+            <li><strong>aflevering 5 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+            <li><strong>aflevering 4 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+            <li><strong>aflevering 3 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+            <li><strong>aflevering 2 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+            <li><strong>aflevering 1 titel</strong> <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere modi voluptas dolorem earum! Odit, optio, eligendi saepe assumenda quo impedit totam atque minima dolores magnam sequi delectus provident. Praesentium?</li>
+              
+        </ul>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

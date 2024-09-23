@@ -1,0 +1,63 @@
+/*Algemeen*/
+header{
+    background-color: rgb(222,202,175);
+    margin-bottom: 0em;
+}
+main h1{
+    background-color:rgb(222,202,175); 
+    text-align: center;
+    padding: 0.2em;
+    margin-top :0em; 
+}
+
+nav a {
+    border: 0.1em solid;
+    padding: 0.8em;
+    margin: 0em 1em;
+    text-align:end;
+    text-decoration: none;
+    color:rgb(105, 105, 105);
+    transition: all 150ms ease-in;
+}
+a:hover{
+    background-color:rgb(239,224,202);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*home*/
+.home-page{
+    background-color: rgb(253,242,226);
+    font-family: 'Times New Roman', Times, serif;
+}  
+
+main img:hover{transform: rotate (45deg);}
+
+/*overzicht*/
+.overzicht-page{
+    background-color: rgb(253,242,226);
+    font-family: 'Times New Roman', Times, serif;
+}
+#demo{
+    text-align: left;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+@media  (min-width: 786px) {
+    ul {
+        column-count: 2;
+        column-gap: 2em;
+    }
+}
+
+/*over-ons*/
+.over-ons-page{
+    background-color: rgb(253,242,226);
+    font-family: 'Times New Roman', Times, serif;
+}
